@@ -1,0 +1,743 @@
+body{
+	margin: 0;
+	width:960px;
+}
+img{
+	max-width:100%;
+	height: auto; 
+}
+.top {
+	background-color: #3d3d29;	
+}
+.top p{
+	margin:0;
+	font-family:'Libre Franklin', sans-serif;
+	color: white;
+	padding: .15em 2%;
+	font-style: italic;
+	text-decoration: none; 
+	text-align: right;
+	font-size: .75em;
+	opacity: 0.95;
+}
+.top p:hover{
+	color: #e68a00;
+}
+.icons{
+	padding-left:.8%;
+	padding-right:.5%;
+	width: 1.5625em;
+	height:1.5625em;
+	float: right;
+}
+img.logo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}	
+.mobile-logo{
+	width: 100%;
+}
+/*Navigation settings*/
+.menu-btn{
+    width: 2.1875em;
+    height: 0.3125em;
+    background-color: white;
+    margin: .350em .5em;	
+}
+nav.icon {
+    display: none;
+}
+nav{
+	clear:both;
+	position:fixed;
+    z-index:60;
+	background-color: black;
+	min-width: 100%;
+	opacity: .9;
+	padding:1em 0%;
+}
+nav ul{
+	border: 0;
+	width: 60em;
+	clear: both;
+	margin: 0 auto;
+}
+nav ul li{
+	display:inline-block;
+	line-height:0.75em;	
+}
+nav ul li a{
+	font-family:'Playfair Display SC', serif;
+	font-size: 1.15em;
+	color: white;
+	padding: 1em ;
+	text-decoration: none; 
+	font-weight: bold;
+	transition: 0.3s ease;
+	position: relative;
+    display: block;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+a:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0.1875em;
+    left: 0;
+    height: 0.1875em;
+    width: 100%;
+    background-color: #e68a00;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+a:active::before {
+    background-color: #000;
+}
+a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+nav.fullsize ul li{
+	padding:0;
+}
+nav.mobile ul li{
+	display:block;
+	text-align: center;
+	width:100%;	
+}
+/*Content settings*/
+.parallax-01, .parallax-02 {
+	position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width:100%;
+}
+.parallax-01{
+	background-image: url("images/3.jpeg"); 
+	opacity: .9;
+	height:43.75em;
+}
+.parallax-01 h1{
+	font-family:'Great Vibes', cursive;	
+	font-size:4.6875em;
+	color: #ff9900;
+	position: absolute; 
+    top: 37%;
+	left: 40%;
+	border-bottom: 2px solid #ff9900;
+	letter-spacing:  0.3125em;
+}
+.parallax-01 p{
+	font-family:'Francois One', sans-serif;
+	font-size: 4.375em;
+	color: #cccccc;
+	position: absolute; 
+	top: 49%;
+	left: 25%;
+	text-transform: uppercase; 
+	text-shadow: -1px 0 grey, 0 1px grey, 3px 0 black, 0 -1px black;
+}
+.parallax-02{
+	background-image:url("images/fish01.jpeg");
+	opacity:.95;
+	height: 25em;
+}
+.parallax-02 p{
+	font-family:'Francois One', sans-serif;
+	font-size: 2.1875em;
+	color: white;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+	position: relative;
+    top: 30%;
+    left: 0%;
+}
+.section-01{
+	height:35.5em;
+	width:100%;
+	background-color: white;
+}
+.section-02{
+	height:40em; /*it was 45.5*/
+	width:100%;
+	background-color: white;
+}
+.content h1 {
+	font-family:'Great Vibes', cursive;	
+	font-size: 4.0625em;
+	float:left;
+	padding: 0.5em 1%;
+	margin:0;
+	color: #ff9900;
+}
+.content p{
+	font-family:'Libre Franklin', sans-serif;
+	text-align: justify;
+	float: left;
+	clear: both;
+	font-size:1.125em;	
+	color:grey;
+	line-height:2em;
+	padding: 0.5em 5%;
+	background-color:white;
+	letter-spacing:  0.20em;
+	margin:0;
+	width:55%;	
+}
+.section-01 img{
+	padding-right: 20%;	
+	width: 95%;
+}
+.section-02{
+	padding-right: 7%;
+	padding-bottom:2%;
+}
+.image-text{
+    position: relative; 
+	float: right;
+    max-width:40%; 
+}
+.image-text img{
+	vertical-align: middle;
+}
+.image-text .img-content{
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%; 
+	padding: 1.25em;
+	font-family:'Libre Franklin', sans-serif;
+}
+.image-text .img-content p{
+	font-family:'Libre Franklin', sans-serif;
+	text-align: justify;
+	font-size:.75em;	
+	color:white;
+	line-height:2em;
+	letter-spacing:  0.3125em;
+}
+.image-text .img-content h1{
+	font-family:'Great Vibes', cursive;	
+	font-size: 2.0625em;
+	padding:0;
+	margin:0;
+	color: #ff9900;
+}
+.content3{
+	height: 25em;
+	background-color:#660000;
+	text-align: center;
+	clear: both;
+}
+.infoRest {
+	float:left;
+	width:25%;
+}
+.infoRest h3 {
+	color: white;
+	font-size:1.125em;
+	text-transform: uppercase;
+	font-family:'Libre Franklin', sans-serif;
+}
+.infoRest p {
+	color: white;
+	font-size:1.125em;
+	font-family:'Libre Franklin', sans-serif;
+}
+.infoRest img {
+	padding: 2%;
+}
+footer {
+	background-color: #001a1a;
+	width: 100%;
+	text-align: right;
+	color:white;
+	padding: .25em 1.5% .25em 1.5%;
+	font-family:'Libre Franklin', sans-serif;
+	clear: both;
+}
+.link-author{
+	text-decoration: none;
+	color: white;
+}
+/* Menu settings*/
+.p-menu, .p-menu2, .s-menu, .a-menu,.g-menu, .cb-menu, .cu-menu {
+	position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-menu{
+	background-image: url("images/beef.jpg");
+	min-height: 18.625em;
+}
+
+.p-menu h1, .a-menu h1, .cb-menu h1,.g-menu h1, .cu-menu h1{
+	font-family:'Playfair Display SC', serif;
+	font-size: 4.6875em;
+	color: White;
+	position: absolute; 
+    top: 47%;
+	right: 2%;
+	letter-spacing:  0.28em;	
+}
+.c-menu{
+	display:block;
+	height:290em;
+	background-color: white;
+}	
+.c-menu h1{
+	font-family:'Great Vibes', cursive;	
+	/*text-shadow: -1px 0 #ff9900, 0 1px black, 2px 0 black, 0 -1px black;*/
+	font-size: 3.125em;
+	padding-left:10%;
+	padding-top: 0.5em;
+	margin:0;
+	color: #ff9900;
+}
+.plateTitle{
+	font-family:'Libre Franklin', sans-serif;
+	font-size:1.3em;	
+	color:black;
+	line-height:1.6em;
+	padding: 0em 10%;
+	background-color:white;
+	margin:0;
+	margin-top: 0.3125em;
+	letter-spacing:  0.3125em;	
+}
+.plateDescrition{
+	font-family:'Libre Franklin', sans-serif;
+	text-align: justify;
+	letter-spacing:  0.3125em;
+	font-size:0.625em;	
+	color:grey;
+	padding: .5em 10%;
+	background-color:white;
+	margin:0;
+}
+/*CONTACT SETTINGS */
+#googleMap{
+	width:100%;
+	height: 25em;
+}
+.cu-menu{
+	background-image: url("images/fondant.jpg");
+	min-height: 18.625em;
+}
+.cu-content{
+	width: 60em;
+	margin: 0 auto;
+	display:block;
+	min-height:20em;
+	background-color: white;
+	color: grey;
+}
+.contact-map{
+	width: 50%;
+	float: left;
+	padding: 3em 0;
+}
+.cb-menu{
+	background-image: url("images/_cod.jpeg");
+	min-height: 18.625em;
+}
+
+/* About us settings*/
+.a-menu{
+	background-image: url("images/burger.jpg");
+	min-height: 18.625em;
+}
+.a-content img {
+	display: block;
+    margin-left: auto;
+	padding-top: 2em;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* Chef's Blog settings*/
+.contentBlog {
+	height: 800px;
+	background-color: white;
+}
+.contentBlog h1{
+	font-family:'Great Vibes', cursive;	
+	font-size: 65px;
+	float:left;
+	padding-left:1em;
+	padding-top:2.2em;
+	margin:0;
+	color: #ff9900;
+}
+.contentBlog p{
+	font-family:'Libre Franklin', sans-serif;
+	text-align: justify;
+	float: left;
+	clear: both;
+	font-size:18px;	
+	color:grey;
+	line-height:1.6em;
+	padding: 0.5em 10%;
+	background-color:white;
+	margin:0;
+	width: 90%;
+	clear: both;
+}
+.infoBlog {
+	float:left;
+	width:30%;
+	padding: .25em 1.5% .25em 10%;
+	margin:0;
+}
+.infoBlog h3{
+	font-family:'Libre Franklin', sans-serif;
+	font-size: 2.1em; /*35px*/
+	text-align: justify;
+	float:left;
+	margin:0;
+	color: #ff9900;
+}
+ .infoBlog p{
+	font-family:'Libre Franklin', sans-serif;
+	font-size:14px;	
+	color:#404040 ;
+	line-height:1.6em;
+	margin:0;
+	padding: 0;
+	width: 85%;
+ }
+ .infoBlogImg{
+	width: 325px;
+	height:300px;
+	clear:both;
+ }
+/* Signature Dishes settings*/
+.s-menu{
+	background-image:url("images/carrot_cake.jpg");
+	min-height: 250px;
+}
+.s-menu h1{
+	font-size: 2.8125em;
+	position:absolute;
+    top: 18%;
+	right: 2%;
+	color: white;
+}
+.s-content, .a-content{
+	width: 60em;
+	margin: 0 auto;
+	display:block;
+	min-height:100em;
+	background-color: white;
+}
+.a-content{
+	min-height:50em;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  position:relative;
+  margin: auto;
+
+}
+.slideshow-container-s{
+	overflow: auto;
+	
+} 
+.slideshow-container-s img{
+	 width:100%;
+	height: 40.75em;
+}
+
+.slideshow-container img{
+	width:100%;
+	
+}
+.s-content h1,  .cu-content h1{
+	font-family:'Libre Franklin', sans-serif;
+	font-size:1.7em;	
+	color:#ff9900;
+	line-height:1.6em;
+	padding: 0em 10%;
+	background-color:white;
+	margin:0;
+	margin-top: 0.3125em;
+	letter-spacing:.1em;
+}
+.s-content p, .a-content p,  .cu-content p{
+	font-family:'Libre Franklin', sans-serif;
+	text-align: justify;
+	letter-spacing: .2em;
+	font-size:1em;	
+	color:grey;
+	padding: .5em 10%;
+	background-color:white;
+	margin:0;
+}
+.mySlides2 {
+    display: none;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.9375em;
+  width: 0.9375em;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*AUTHOR SECTION*/
+.header{
+	width:100%;
+	background-color:#660000;
+	color: white;
+	text-align: center;
+	padding-top: 1em;
+	font-family:'Libre Franklin', sans-serif;
+	font-size:1.3em;
+	letter-spacing:.1em;
+}
+.content-author{
+	padding-top: 3em;
+	width: 60em;
+	margin: 0 auto;
+}
+.content-author h2{
+	    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.7em;
+    color: #ff9900;
+}
+.content-author p{
+	font-family:'Libre Franklin', sans-serif;
+	font-size:1em;
+	letter-spacing:.1em;
+}	
+.content-author img {
+	height: 21.1796875em;
+}
+.column {
+  float: left;
+  width: 45.3%;
+  margin-bottom: 16px;
+  padding: 3em 5%;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+	background-color: #555;
+}
+.back-home a{
+	font-family:'Libre Franklin', sans-serif;
+	font-size:1em;
+	text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 2%;
+}
+.back-home a:hover{
+	background-color: #ddd;
+    color: black;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/*GALLERY SETTINGS*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.g-menu{
+	background-image: url("images/fondant.jpg");
+	min-height: 18.625em;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 441px){/*small screens*/
+	nav.fullsize{
+		display: none;
+	}
+	nav.mobile{
+		display: inline-block;	
+	}
+	nav.mobile ul li{	
+		display: inline-block;	
+	}
+	nav.mobile ul li a{
+		text-align: left;	
+	}
+	.parallax-02 p{
+		font-size: 1em;
+	}
+	.section-01 img, .section-02 img{
+		display: none;
+	}
+	.section-02{
+		padding:0;
+	}
+	.responsive-menu{
+		display: none;  
+	}
+	.img-content{
+		display: none;
+	}
+	.parallax-01{
+		height:28.75em;
+	} 
+	
+	.content img{
+		display: none;
+	}
+	.content h1{
+		 padding: 0.5em 1%;
+		 font-size: 3em;
+	}
+	.content p{ 
+		float: left;
+		width: 100%;
+	}
+	.content2 p{
+		width: 100%;
+	}
+	.content2 h1{
+		font-size:3em
+	}
+	.infoFood{
+		display:none;
+		width:100%;
+	}
+	.content3{
+		height: 35em;
+	}
+	.infoRest {
+		width:100%;
+		float: left;
+	}
+	.s-content{
+		width: auto;
+	}
+	 .column {
+    flex: 100%;
+    max-width: 100%;
+	}
+	.plateTitle{
+		font-size:0.95em;	
+	}
+	.plateDescrition{
+		font-size:0.495em;		
+	}
+	.infoBlog{
+		width:100%;
+		float: left;
+	}
+	.contact-map{
+	width: 100%;
+	float: left;
+	}
+}
+@media screen and (min-width:441px) {
+	nav.fullsize{
+		display: block;
+	}
+	nav.mobile{
+		display: none;
+	}
+	.menu-btn{
+		display: none;
+	}
+	.mobile-logo{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.logo{ /* makes sure that the logo and the hamburger fit on the same line*/
+		width:80%;
+	}	
+	footer{
+	width: 100%;
+	}
+}	
